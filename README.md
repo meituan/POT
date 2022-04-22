@@ -23,6 +23,7 @@ For ease of analysis and processing, we organize the data into multiple npy file
 
 
 ### Review
+For each user, we divide his reviews into historical reviews and recent reviews. There are 419,711 historical reviews and 135,586 recent reviews in PATag.
 ```console
 - UGC_Aspect_Word.npy 
 - UGC_RankedAspects.npy
@@ -42,50 +43,6 @@ For ease of analysis and processing, we organize the data into multiple npy file
 - Click_UP.npy
 - Buy_UP.npy
 - Favor_UP.npy
-```
-
-
-
-
-We provide a runnable version of the PATag data. You can run this program directly using `data.pkl` and `matrix.pkl` in [Google Drive](https://drive.google.com/drive/folders/1ST6maKXhkab6bEuPdJtgRbPg2IjXaiDz?usp=sharing). You should download and move it under`./DataSet/`. 
-
-
-You can view the details of the relevant data through `./DataSet/data_info.txt`, and `./DataSet/sample_for_data_pair.txt` is an instance of data pair.
-
-If you want to get raw data and more processing details, please use this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSc-SkZnd2rJqjSkPYOvi5ShvCHlbnYA8viS6459yEy27dPdYQ/viewform?usp=sf_link) to submit your information and request access to PATag.
-
-## Prerequisites
-```console
-- CUDA >= 10.0
-- Python >= 3.6
-```
-
-## Setup
-Check the packages needed or simply run the command:
-```console
-pip install -r requirements.txt
-```
-
-## Experiments
-You can run the program with the following command: 
-```bash
-bash script/run.sh model_name gpus is_train
-```
-
-'model_name' can be 'POT', 'POT_woBehavior' or 'POT_woHGAT', to correspond to our proposed model, as well as two variants.
-
-We support and recommend using multiple GPUs for training and a single GPU for testing.
-
-### Train
-```bash
-bash script/run.sh POT 0,1,2,3 1
-```
-
-### Test
-For reproducibility purposes, we place the model checkpoints at [Google Drive](https://drive.google.com/drive/folders/1ggxkJCFDW30gyZG4tXv5ecU0CNPr-0ko?usp=sharing). You should download and move it under `./Output/model_name/`, then you can run the trained models to test by using `best.pkl` and `best_memory.p`.
-
-```bash
-bash script/run.sh POT 0 0
 ```
 
 ## Reference
