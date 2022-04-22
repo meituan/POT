@@ -19,7 +19,7 @@ Intuitively, PATag mainly contains the following fields and `sample_for_data_fie
 - is_favor: Whether user has favored product(POI).
 
 
-For ease of analysis and processing, we organize the data into multiple npy files. You can download them by [Google Drive](https://drive.google.com/drive/folders/1ST6maKXhkab6bEuPdJtgRbPg2IjXaiDz?usp=sharing) and process them with `data_reader.py` and `data_loader.py`, then you have the data that [POT](https://github.com/MengxueZhao/POT) needed.
+For ease of analysis and processing, we organize the data into multiple npy files. You can download them by [Google Drive](https://drive.google.com/drive/folders/1uS2K35NhgyQ2zK-6DiSzFjRtowUQ-Y-D?usp=sharing) and process them with `data_reader.py` and `data_loader.py`, then you have the data that [POT](https://github.com/MengxueZhao/POT) needed.
 
 
 ### Review
