@@ -23,18 +23,18 @@ For ease of analysis and processing, we organize the data into multiple npy file
 
 
 ### Review
-For each user, we divide his reviews into historical reviews and recent reviews. There are 419,711 historical reviews and 135,586 recent reviews in PATag. We only use meaningful sentences in reviews as input, i.e. review sentences that can correspond to predefined aspects. As multiple review sentences may link to the same aspect in reviews, we only select the one with the highest confidence as the opinion tag. Briefly, we use meaningful sentences from historical reviews as input, and output the meaningful sentences with the highest confidence for a single aspect in recent reviews, i.e., opinion tag.
+For each user, we divide his/her reviews into historical reviews and recent reviews. There are 419,711 historical reviews and 135,586 recent reviews in PATag. We only use meaningful sentences in reviews as input, i.e. review sentences that can correspond to predefined aspects. As multiple review sentences may link to the same aspect in reviews, we only select the one with the highest confidence as the opinion tag. Briefly, we use meaningful sentences from historical reviews as input, and output the meaningful sentences with the highest confidence for a single aspect in recent reviews, i.e., opinion tag.
 
-- UGC_Aspect_Word.npy : 
-- UGC_RankedAspects.npy : 
-- UGC_RankedTags.npy : 
+- UGC_Aspect_Word.npy : A dict with historical reviews id (int) as key and meaningful sentences (list) as value.
+- UGC_RankedAspects.npy : A dict with recent reviews id (int) as key and ranked aspects (list) as value.
+- UGC_RankedTags.npy : A dict with recent reviews id (int) as key and ranked opinion tags (list) as value.
 
 
 ### User-Product(POI) pair
-- POI_User.npy 
-- UGC_UP.npy
-- User_POI_rank.npy 
-- User_PR.npy
+- POI_User.npy : A dict with products(POIs) id (int) as key and users who have written reviews for it (list) as value.
+- UGC_UP.npy : A dict with recent reviews id (int) as key and user and product(POI) corresponding to it (tuple) as value.
+- User_POI_rank.npy : A dict with users id (int) as key and products(POIs) he/she has written reviews sorted by time (list) as value.
+- User_PR.npy : A dict with users id (int) as key and his/her historical reviews and corresponding products(POIs) (tuple list) as value.
 
 
 ### Behavior
