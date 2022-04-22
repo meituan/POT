@@ -11,16 +11,15 @@ PATag is a large-scale Chinese restaurant reviews, opinion tags and user behavio
 Intuitively, PATag mainly contains the following fields and `sample_for_data_field.txt` is an instance of PATag.
 - review_id: Anonymized review id.
 - user_id: Anonymized user id.
-- poi_id: Anonymized product(poi) id.
-- review_context: Historical reviews of user and product(poi). 
+- poi_id: Anonymized product(POI) id.
+- review_context: Historical reviews of user and product(POI). 
 - opinion_tags: Ranked aspect-opinion tag pairs.
-- is_click: Whether user has clicked product(poi).
-- is_order: Whether user has ordered product(poi).
-- is_favor: Whether user has favored product(poi).
+- is_click: Whether user has clicked product(POI).
+- is_order: Whether user has ordered product(POI).
+- is_favor: Whether user has favored product(POI).
 
 
-In order to
-
+For ease of analysis and processing, we organize the data into multiple npy files. You can download them by [Google Drive](https://drive.google.com/drive/folders/1ST6maKXhkab6bEuPdJtgRbPg2IjXaiDz?usp=sharing) and process them with `data_reader.py` and `data_loader.py`, then you have the data that [POT](https://github.com/MengxueZhao/POT) needed.
 
 
 ### Review
