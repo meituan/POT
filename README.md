@@ -23,7 +23,7 @@ For ease of analysis and processing, we organize the data into multiple npy file
 
 
 ### Review
-For each user, we divide his reviews into historical reviews and recent reviews. There are 419,711 historical reviews and 135,586 recent reviews in PATag.
+For each user, we divide his reviews into historical reviews and recent reviews. There are 419,711 historical reviews and 135,586 recent reviews in PATag. We only use meaningful sentences in reviews as input, i.e. review sentences that can correspond to predefined aspects. As multiple review sentences may link to the same aspect in reviews, we only select the one with the highest confidence as the opinion tag. Briefly, we use meaningful sentences from historical reviews as input, and output the meaningful sentences with the highest confidence for a single aspect in recent reviews, i.e., opinion tag.
 ```console
 - UGC_Aspect_Word.npy 
 - UGC_RankedAspects.npy
