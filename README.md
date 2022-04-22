@@ -58,7 +58,6 @@ If you want to get raw data and more processing details, please use this [Google
 ```console
 - CUDA >= 10.0
 - Python >= 3.6
-- PyTorch >= 1.7
 ```
 
 ## Setup
