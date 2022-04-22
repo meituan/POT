@@ -17,6 +17,9 @@ Intuitively, PATag mainly contains the following fields:
 - is_click: Whether user has clicked product(poi).
 - is_order: Whether user has ordered product(poi).
 - is_favor: Whether user has favored product(poi).
+`sample_for_data_field.txt` is an instance of PATag.
+
+
 
 
 
