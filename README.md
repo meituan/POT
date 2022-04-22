@@ -9,7 +9,6 @@ If you have any question, please open an issue or contact <keninazhao@163.com>.
 PATag is a large-scale Chinese restaurant reviews, opinion tags and user behavior dataset for personalized abstractive opinion tagging, which contains 555,297 reviews, 135,586 opinion tags and 15 million behavior actions from 68,732 users and 58,643 products(POIs). Each opinion tag is manually annotated to 28 predefined aspect categories, such as service, environment, taste and so on.
 
 Intuitively, PATag mainly contains the following fields:
-```console
 - review_id: Anonymized review id.
 - user_id: Anonymized user id.
 - poi_id: Anonymized product(poi) id.
@@ -18,7 +17,7 @@ Intuitively, PATag mainly contains the following fields:
 - is_click: Whether user has clicked product(poi).
 - is_order: Whether user has ordered product(poi).
 - is_favor: Whether user has favored product(poi).
-```
+
 
 
 ### Review
