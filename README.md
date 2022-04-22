@@ -38,9 +38,9 @@ For each user, we divide his/her reviews into historical reviews and recent revi
 
 
 ### Behavior
-- Click_UP.npy
-- Buy_UP.npy
-- Favor_UP.npy
+- Click_UP.npy : A dict with users id (int) as key and products(POIs) his/her has clicked and the number of clicks (tuple list) as value.
+- Buy_UP.npy : A dict with users id (int) as key and products(POIs) his/her has ordered and the number of orders (tuple list) as value.
+- Favor_UP.npy : A dict with users id (int) as key and products(POIs) his/her has favored and the number of favors (tuple list) as value.
 
 
 ## Reference
