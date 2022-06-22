@@ -2,7 +2,7 @@
 
 This repository contains the data of the SIGIR 2022 Paper [Personalized Abstractive Opinion Tagging](https://staff.fnwi.uva.nl/m.derijke/wp-content/papercite-data/pdf/zhao-2022-personalized.pdf).
 
-[Github](https://github.com/MengxueZhao/POT) shows more details of this paper.
+This [Github](https://github.com/MengxueZhao/POT) shows more details of this paper.
 
 If you have any question, please open an issue or contact my email <keninazhao@163.com>.
 
